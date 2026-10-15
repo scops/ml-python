@@ -1,0 +1,7 @@
+# Los notebooks se guardan en git sin salidas, contadores ni metadatos del kernel,
+# así ejecutar un notebook no lo marca como modificado (filtro nbstripout, ver README)
+*.ipynb filter=nbstripout
+*.ipynb diff=ipynb
+
+# El reto A depende de sus contadores de ejecución desordenados: no se limpia
+notebook_sospechoso.ipynb -filter -diff

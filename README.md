@@ -19,11 +19,14 @@ uv sync
 versiones exactas que fija `uv.lock`. Es el único entorno que vamos a usar durante los siete
 días, de modo que no hace falta instalar nada más ni crear entornos por laboratorio.
 
-Configuramos también `git pull` para que guarde y reaplique nuestros cambios locales:
+Configuramos también `git pull` para que guarde y reaplique nuestros cambios locales, y git para
+que ignore lo que cambia al ejecutar un notebook (salidas, contadores y datos del kernel):
 
 ```bash
 git config pull.rebase true
 git config rebase.autoStash true
+uv run nbstripout --install --attributes .gitattributes
+git config filter.nbstripout.extrakeys "metadata.kernelspec metadata.language_info"
 ```
 
 ## Cómo trabajar
@@ -76,6 +79,9 @@ git pull
 
 Para que la actualización nunca choque con nuestro trabajo:
 
+- Ejecutar un notebook del repositorio no cuenta como cambio: git descarta las salidas al
+  compararlo. VS Code o `git status` pueden marcarlo igualmente con una `M`, pero si al abrir
+  el diff no aparece ninguna diferencia, es que no hemos cambiado nada.
 - Los notebooks y scripts que creemos nosotros (ficheros nuevos) no molestan nunca.
 - Si queremos modificar un fichero del repositorio, mejor trabajar sobre una copia, por ejemplo
   `pipeline_roto_mio.py`.
