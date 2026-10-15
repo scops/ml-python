@@ -1,0 +1,14 @@
+{
+    // VS Code detecta solo el entorno .venv de la raíz; esto lo fija como intérprete por defecto
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.terminal.activateEnvironment": true,
+
+    // Los notebooks se ejecutan desde la raíz del repo, igual que en JupyterLab:
+    // así `datos/`, `modelos/` e `import utilidades` funcionan igual en los dos sitios
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true
+    }
+}

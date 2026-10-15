@@ -1,0 +1,21 @@
+# Entorno virtual (se recrea con `uv sync`)
+.venv/
+
+# Ficheros que generan los scripts y notebooks del curso
+datos/
+modelos/
+resultados/
+
+# Espacio personal del alumno: lo que pongas aquí nunca choca con un `git pull`
+mi-trabajo/
+
+# Python
+__pycache__/
+*.py[oc]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+[project]
+name = "ml-python-alumnos"
+version = "1.0.0"
+description = "Entorno y material de prácticas del curso Machine Learning con Python (Sinensia)"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    # Notebooks: JupyterLab en el navegador y kernel para VS Code
+    "jupyterlab>=4.6.4",
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1",
+    # Cálculo y datos
+    "numpy>=2.3",
+    "scipy>=1.16",
+    "pandas>=3.0.6",
+    "pyarrow>=21.0",
+    "openpyxl>=3.1",
+    # Gráficos
+    "matplotlib>=3.11.2",
+    "seaborn>=0.13",
+    # Machine Learning
+    "scikit-learn>=1.9.1",
+    "joblib>=1.5",
+]
+
+# No es un paquete instalable: solo un entorno de trabajo.
+[tool.uv]
+package = false
