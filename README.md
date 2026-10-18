@@ -65,7 +65,6 @@ uv run python datos_dia3.py
 | Fichero | Para qué sirve |
 |---|---|
 | `ml-hello-world.ipynb` | Primer notebook de prueba del entorno |
-| `notebook_sospechoso.ipynb` | Reto A del Día 1 |
 | `pipeline_roto.py` | Reto B del Día 1 |
 | `datos_dia3.py` … `datos_dia7.py` | Generan los datos de cada día en `datos/` |
 | `utilidades.py` | Funciones propias del proyecto integrador |

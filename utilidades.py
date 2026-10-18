@@ -27,3 +27,4 @@ def puntuar(clientes, abandono, gasto, segmentos, smear):
         "segmento": segmentos.predict(clientes),
         "llamar": p * MARGEN * g > OFERTA,
     }, index=clientes.index)
+

@@ -3,5 +3,3 @@
 *.ipynb filter=nbstripout
 *.ipynb diff=ipynb
 
-# El reto A depende de sus contadores de ejecución desordenados: no se limpia
-notebook_sospechoso.ipynb -filter -diff
