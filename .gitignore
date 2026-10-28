@@ -5,6 +5,7 @@
 datos/
 modelos/
 resultados/
+figuras/
 
 # Espacio personal del alumno: lo que pongas aquí nunca choca con un `git pull`
 mi-trabajo/

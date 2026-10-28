@@ -22,6 +22,7 @@ dependencies = [
     "scikit-learn>=1.9.1",
     "joblib>=1.5",
     "nbstripout>=0.9.1",
+    "lazypredict>=0.3",
 ]
 
 # No es un paquete instalable: solo un entorno de trabajo.
